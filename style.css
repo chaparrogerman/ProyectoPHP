@@ -130,5 +130,9 @@ u {
     .conviertete-container{
         width: 90%;
     }
+
+    .foot-container a{
+        margin: 0 90px;
+    }
 }
 
