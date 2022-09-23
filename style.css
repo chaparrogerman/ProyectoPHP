@@ -131,8 +131,8 @@ u {
         width: 90%;
     }
 
-    .foot-container a{
-        margin: 0 90px;
+    .foot-container{
+        flex-direction: column;
     }
 }
 
