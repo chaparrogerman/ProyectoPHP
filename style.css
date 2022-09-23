@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid{
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar{
+    background-color: #353a40;
+    padding: 5px 80px;
+}
+
+.navbar a{
+    color: #9b9ca0;
+}
+
+.carousel{
+    position: relative;
+}
+
+.carousel-inner{
+    filter: brightness(0.5);
+}
+
+.text-container{
+    width: 500px;
+    position: absolute;
+    bottom: 22%;
+    right: 9%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.encabezado-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.small-font{
+    font-size: small;
+}
+
+.card-body-lugar{
+    background-color: #353a40;
+}
+
+u {    
+    border-bottom: 2px dotted #000;
+    text-decoration: none;
+}
+
+.conviertete-container{
+    width: 50%;
+}
+
+.btn-conviertete{
+    background-color: #96c93e;
+}
+
+.btn-conviertete:hover{
+    background-color: #709b26 !important;
+}
+
+.foot-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to right, #162c36 0%, #1e5372 120%);
+}
+
+.foot-container a{
+    color: #fff;
+    max-width: 90px;
+    padding: 20px 0px;
+    margin: 0 35px;
+}
+
+@media (max-width: 992px){
+    .conviertete-container p{
+        font-size: x-small;
+    }
+
+    .foot-container{
+        font-size: small;
+    }
+}
+
+@media (max-width: 768px){
+    .navbar{
+        padding: 5px 30px;
+    }
+}
+
+@media (max-width: 576px){
+    .navbar{
+        padding: 0px 10px;
+    }
+
+    .text-container{
+        width: 90%;
+        bottom: 10%;
+        right: 5%;
+        font-size: x-small;
+    }
+
+    .text-container h1{
+        font-size: medium;
+    }
+
+    .btn-container a{
+        font-size: x-small;
+        padding: 5px;
+    }
+
+    .conviertete-container{
+        width: 90%;
+    }
+}
+
