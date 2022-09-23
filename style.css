@@ -98,15 +98,15 @@ u {
     .foot-container{
         font-size: small;
     }
+
+    .foot-container a{
+        margin: 0 10px;
+    }
 }
 
 @media (max-width: 768px){
     .navbar{
         padding: 5px 30px;
-    }
-
-    .foot-container a{
-        margin: 0 10px;
     }
 }
 
