@@ -71,12 +71,27 @@ u {
     width: 50%;
 }
 
-.btn-conviertete{
+.boton{
     background-color: #96c93e;
 }
 
-.btn-conviertete:hover{
+.boton:hover{
     background-color: #709b26 !important;
+}
+
+.tickets-container{
+    width: 50%;
+    padding: 0 30px;
+}
+
+.categorias-container{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.alert{
+    padding: 10px 20px 0px 20px;
 }
 
 .foot-container{
