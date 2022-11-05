@@ -21,7 +21,6 @@ function validar(nombre,apellido,correo,cantidad){
 
 function precio(cantidad){
     let categoria = parseInt(document.getElementById("categoria").value)
-    console.log(document.getElementById("categoria").value)
     let total = 0
     switch(categoria){
         case 1:
