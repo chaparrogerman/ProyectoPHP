@@ -25,17 +25,17 @@ function precio(cantidad){
     switch(categoria){
         case 1:
             console.log("la categoria es"+categoria)
-            total = 200 * cantidad * 0.2
+            total = cantidad * (200 - 200 * 0.8)
             document.getElementById("total").innerHTML = "Total a Pagar: $"+total
             break
         case 2:
             console.log("la categoria es"+categoria)
-            total = 200 * cantidad * 0.5
+            total = cantidad * (200 - 200 * 0.5)
             document.getElementById("total").innerHTML = "Total a Pagar: $"+total
             break
         case 3:
             console.log("la categoria es"+categoria)
-            total = 200 * cantidad * 0.85
+            total = cantidad * (200 - 200 * 0.15)
             document.getElementById("total").innerHTML = "Total a Pagar: $"+total
             break
      }
