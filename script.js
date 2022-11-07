@@ -3,9 +3,10 @@ const apellido = document.getElementById("apellido")
 const correo = document.getElementById("correo")
 const cantidad = document.getElementById("cantidad")
 const categoria = document.getElementById("categoria")
+const total = document.getElementById("total")
 
 function borrar(){
-    document.getElementById("total").innerHTML = "Total a Pagar: $"
+    total.innerHTML = "Total a Pagar: $"
 }
 
 function validar(nombre,apellido,correo,cantidad){
@@ -45,8 +46,4 @@ function precio(cantidad){
 
 function totalPagar(){
     validar(nombre.value, apellido.value, correo.value, parseInt(cantidad.value))
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 1ec1969d3446c55637d5ba5624c42b2c1f6322d3
