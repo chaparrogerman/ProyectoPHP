@@ -45,4 +45,8 @@ function precio(cantidad){
 
 function totalPagar(){
     validar(nombre.value, apellido.value, correo.value, parseInt(cantidad.value))
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 1ec1969d3446c55637d5ba5624c42b2c1f6322d3
