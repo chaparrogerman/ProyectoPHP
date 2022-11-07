@@ -9,7 +9,7 @@ function borrar(){
     total.innerHTML = "Total a Pagar: $"
 }
 
-function validar(nombre,apellido,correo,cantidad){
+function validar(nombre,apellido,correo,cant){
     var expReg= /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
     var esValido= expReg.test(correo)
     if(nombre=='' || nombre.length <3){
@@ -21,9 +21,9 @@ function validar(nombre,apellido,correo,cantidad){
     }else if(esValido==false){
         alert("El correo ingresado no es valido")
         return false
-    }else if(!Number.isInteger(cantidad) || cantidad==0){
+    }else if(!Number.isInteger(cant) || cant==0){
         alert("Ingrese la cantidad de entradas a comprar")
-        document.getElementById("cantidad").value = ""
+        cantidad.value = ""
         return false
     }else{
         return true
