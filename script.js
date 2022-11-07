@@ -12,10 +12,10 @@ function borrar(){
 function validar(nombre,apellido,correo,cant){
     var expReg= /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
     var esValido= expReg.test(correo)
-    if(nombre.length <3){
+    if(nombre.length <2){
         alert("Ingrese un nombre valido")
         return false
-    }else if(apellido.length <3){
+    }else if(apellido.length <2){
         alert("Ingrese un apellido valido")
         return false
     }else if(esValido==false){
