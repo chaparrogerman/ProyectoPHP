@@ -31,22 +31,22 @@ function validar(nombre,apellido,correo,cant){
 }
 
 function totalPagar(){
-    let total = 0
+    let precio = 0
     var esValido = validar(nombre.value, apellido.value, correo.value, parseInt(cantidad.value))
 
     if(esValido == true){
         switch(parseInt(categoria.value)){
              case 1:
-                total = cantidad.value * (200 - 200 * 0.8)
-                document.getElementById("total").innerHTML = "Total a Pagar: $"+total
+                precio = cantidad.value * (200 - 200 * 0.8)
+                total.innerHTML = "Total a Pagar: $"+precio
                 break
             case 2:
-                total = cantidad.value* (200 - 200 * 0.5)
-                document.getElementById("total").innerHTML = "Total a Pagar: $"+total
+                precio = cantidad.value* (200 - 200 * 0.5)
+                total.innerHTML = "Total a Pagar: $"+precio
                 break
             case 3:
-                total = cantidad.value * (200 - 200 * 0.15)
-                document.getElementById("total").innerHTML = "Total a Pagar: $"+total
+                precio = cantidad.value * (200 - 200 * 0.15)
+                total.innerHTML = "Total a Pagar: $"+precio
                 break
         }
     }
