@@ -14,36 +14,40 @@ function validar(nombre,apellido,correo,cantidad){
     var esValido= expReg.test(correo)
     if(nombre=='' || nombre.length <3){
         alert("Ingrese un nombre valido")
+        return false
     }else if(apellido=='' || apellido.length <3){
         alert("Ingrese un apellido valido")
+        return false
     }else if(esValido==false){
         alert("El correo ingresado no es valido")
+        return false
     }else if(!Number.isInteger(cantidad) || cantidad==0){
         alert("Ingrese la cantidad de entradas a comprar")
         document.getElementById("cantidad").value = ""
+        return false
     }else{
-        precio(cantidad)
+        return true
     }
 }
 
-function precio(cantidad){
-    let total = 0
-    switch(parseInt(categoria.value)){
-        case 1:
-            total = cantidad * (200 - 200 * 0.8)
-            document.getElementById("total").innerHTML = "Total a Pagar: $"+total
-            break
-        case 2:
-            total = cantidad * (200 - 200 * 0.5)
-            document.getElementById("total").innerHTML = "Total a Pagar: $"+total
-            break
-        case 3:
-            total = cantidad * (200 - 200 * 0.15)
-            document.getElementById("total").innerHTML = "Total a Pagar: $"+total
-            break
-     }
-}
-
 function totalPagar(){
-    validar(nombre.value, apellido.value, correo.value, parseInt(cantidad.value))
+    let total = 0
+    let esValido = validar(nombre.value, apellido.value, correo.value, parseInt(cantidad.value))
+    console.log(esValido)
+    if(esValido == true){
+        switch(parseInt(categoria.value)){
+             case 1:
+                total = cantidad.value * (200 - 200 * 0.8)
+                document.getElementById("total").innerHTML = "Total a Pagar: $"+total
+                break
+            case 2:
+                total = cantidad.value* (200 - 200 * 0.5)
+                document.getElementById("total").innerHTML = "Total a Pagar: $"+total
+                break
+            case 3:
+                total = cantidad.value * (200 - 200 * 0.15)
+                document.getElementById("total").innerHTML = "Total a Pagar: $"+total
+                break
+        }
+    }
 }
