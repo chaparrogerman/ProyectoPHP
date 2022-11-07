@@ -32,8 +32,8 @@ function validar(nombre,apellido,correo,cantidad){
 
 function totalPagar(){
     let total = 0
-    let esValido = validar(nombre.value, apellido.value, correo.value, parseInt(cantidad.value))
-    console.log(esValido)
+    var esValido = validar(nombre.value, apellido.value, correo.value, parseInt(cantidad.value))
+
     if(esValido == true){
         switch(parseInt(categoria.value)){
              case 1:
