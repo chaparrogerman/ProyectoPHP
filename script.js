@@ -9,19 +9,19 @@ function borrar(){
     total.innerHTML = "Total a Pagar: $"
 }
 
-function validar(nombre,apellido,correo,cant){
+function validar(){
     var expReg= /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
-    var esValido= expReg.test(correo)
-    if(nombre.length <2){
+    var esValido= expReg.test(correo.value)
+    if(nombre.value.length <2){
         alert("Ingrese un nombre valido")
         return false
-    }else if(apellido.length <2){
+    }else if(apellido.value.length <2){
         alert("Ingrese un apellido valido")
         return false
     }else if(esValido==false){
         alert("El correo ingresado no es valido")
         return false
-    }else if(!Number.isInteger(cant) || cant==0){
+    }else if(!Number.isInteger(parseInt(cantidad.value)) || cantidad.value==0){
         alert("Ingrese la cantidad de entradas a comprar")
         cantidad.value = ""
         return false
@@ -32,7 +32,7 @@ function validar(nombre,apellido,correo,cant){
 
 function totalPagar(){
     let precio = 0
-    var esValido = validar(nombre.value, apellido.value, correo.value, parseInt(cantidad.value))
+    var esValido = validar()
 
     if(esValido == true){
         switch(parseInt(categoria.value)){
