@@ -84,6 +84,14 @@ u {
     padding: 0 30px;
 }
 
+.registro-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: calc(100vh - 215px);
+}
+
 .categorias-container{
     display: flex;
     justify-content: space-between;
