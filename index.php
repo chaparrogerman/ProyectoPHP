@@ -13,7 +13,7 @@
     <header>
       <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-              <a class="navbar-brand text-light" href="index.html">
+              <a class="navbar-brand text-light" href="index.php">
                 <img src="img/codoacodo.png" alt="Codo a Codo" width="120" height="70" class="d-inline-block align-text-center">
                 Conf Bs As
               </a>
